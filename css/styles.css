@@ -67,6 +67,14 @@ body {
 .customers {
   background-color: #151f20; }
 
+.footer-link {
+  color: #eee;
+  font-size: 13px;
+  transition: all .3s; }
+  .footer-link:hover {
+    color: #70aed2;
+    text-decoration: none; }
+
 .gallery-list-item {
   color: #777;
   cursor: pointer;
