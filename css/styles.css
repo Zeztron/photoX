@@ -28,6 +28,42 @@ body {
   .heading:hover {
     opacity: 1; }
 
+.contact {
+  background: linear-gradient(105deg, #151f20 0%, rgba(21, 31, 32, 0.95) 50%, transparent 50%), url(../images/form-img.jpeg) center no-repeat/cover; }
+
+.input {
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  transition: all .8s ease-out; }
+  .input:focus {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #f5593d; }
+  .input:placeholder-shown + .label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden; }
+
+.submit-button {
+  background: #f5593d;
+  color: #eee;
+  transition: all .3s; }
+  .submit-button:hover {
+    background: #f9793d;
+    transform: translateY(-3px); }
+
+.label {
+  color: #777;
+  display: block;
+  margin-top: -70px;
+  margin-left: 4px;
+  font-size: 13px;
+  transition: all .3s; }
+
 .customers {
   background-color: #151f20; }
 
@@ -140,6 +176,13 @@ header {
   100% {
     transform: translateY(0);
     opacity: 1; } }
+
+@media (max-width: 992px) {
+  .contact {
+    background: linear-gradient(#151f20, rgba(21, 32, 32, 0.95)); }
+  .contact-form {
+    width: 80%;
+    margin: auto; } }
 
 .mission {
   background: #151f20; }
